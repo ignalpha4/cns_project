@@ -1,0 +1,128 @@
+<html>
+    <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Your location
+        </title>
+        <style>
+            u{
+                font-size: xx-large;
+               
+            }
+            select{
+                font-size:x-large;
+                
+            }
+            input{
+                background-color: rgb(33, 18, 240);
+                color: white;
+                font-size:x-large;
+                padding: 12px 20px;
+                border: 0px;
+                border-radius: 4px;
+                cursor: pointer;
+                width: max-content
+            }
+
+            input:hover {
+            background-color: rgb(32, 20, 100);
+            box-shadow: 0 12px 16px 0 rgba(58, 2, 95, 0.24), 0 17px 50px 0 rgba(33, 4, 100, 0.19);
+            }
+            input:hover:active {
+            background-color: #3e8e41;
+            transform: translateY(4px);
+            }
+		
+		
+            
+		
+		
+		footer {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		padding: 3px;
+		background-color: gray;
+		color: white;
+		}
+        </style>
+    </head>
+
+    <body style="background-color:rgb(105, 223, 223);">
+        <center>
+            
+        <form method="post" action="{{ url_for('result') }}">
+		<br>
+		<br>
+		<br>
+		<br>
+            <u><b>Your Location</b></u><br><br>
+                <p>
+                    
+                    <select id="source" name = "source" required="required" placeholder="Select Source">
+                      <option value="#">SELECT ROUTE</option>
+                    <option value="svpm gate"> SVPM GATE </option>
+                    <option value="girls hostel"> Girls Hostel </option>
+					<option value="boys hostel"> Boys Hostel </option>
+					<option value="Playground"> playground  </option>
+					<option value="Cafeteria"> Cafeteria  </option>
+					<option value="Parking"> Parking  </option>
+					<option value="Electrical Engg Building"> Electrical Engg Building  </option>
+					<option value="Management Building"> Management Building  </option>
+                    <option value="College of Engg"> College Of Engineering  </option>
+					<option value="Diploma COE"> Diploma COE  </option>
+                    <option value="Sharad hall"> Sharad Hall(Auditorium)   </option>
+                    <option value="SVPM office/Pharmacy Building"> S.V.P.M Office /Pharmacy Building   </option>
+                </p>
+
+            </select><br><br><br><br>
+
+	
+
+            <u><b>Your Destination</b></u><br><br>
+    
+            <p>
+                
+                <select id="destination" name = "destination" required="required" placeholder="Select Destination">
+                  <option value="#">SELECT ROUTE</option>
+                  <option value="svpm gate"> SVPM GATE </option>
+                    <option value="girls hostel"> Girls Hostel </option>
+					<option value="boys hostel"> Boys Hostel </option>
+					<option value="Playground"> playground  </option>
+					<option value="Cafeteria"> Cafeteria  </option>
+					<option value="Parking"> Parking  </option>
+					<option value="Electrical Engg Building"> Electrical Engg Building  </option>
+					<option value="Management Building"> Management Building  </option>
+                    <option value="College of Engg"> College Of Engineering  </option>
+					<option value="Diploma COE"> Diploma COE  </option>
+                    <option value="Sharad hall"> Sharad Hall(Auditorium)   </option>
+                    <option value="SVPM office/Pharmacy Building"> S.V.P.M Office /Pharmacy Building   </option>
+
+            </p>
+            </select>
+			
+		   <!-- Button -->
+           <section> 
+            <div>
+            <input type="submit" value="Predict">
+          </div>
+        </section>
+
+        </form>
+               
+        </center><br><br>
+
+       
+		
+		<footer>
+		<p><b>CONTACT:</b></p>
+		<p>EMAIL: coembk.office@gmail.com </p>
+		<p>OFFICE PHONE: (02112) 254424</p>
+		<p>WEBSITE: www.engg.svpm.org.in</p>
+		</footer>
+
+    </body>
+</html>
+
+                
